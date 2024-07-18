@@ -39,6 +39,12 @@ if selected_model == 'C-MAX' and selected_year > 2010:
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     st.write('Parameter reset: Required')
     st.write('PATS Type = E')
+    st.download_button(
+        label='Click on this button to download the Parameter Reset Instructions', 
+        data='pdf_file', 
+        file_name='parameter_reset_instructions.pdf', 
+        mime="parameter_reset/pdf")
+
 elif selected_model == 'Contour (V6-only)' and selected_year == 1998:
     st.write("Not Required")
 elif selected_model == 'Crown Victoria':
