@@ -16,6 +16,10 @@ st.set_page_config(
 
 makes = ['Ford', 'Lincoln', 'Mercury']
 
+pr_notrequired = 'Parameter reset: Not Required'
+
+pr_required = 'Parameter reset: Required'
+
 selected_make = st.selectbox('Select Make: ', makes)
 
 Ford = ['C-MAX', 'Contour (V6-only)', 'Crown Victoria', 'Edge']
@@ -53,6 +57,7 @@ if selected_model == 'C-MAX' and selected_year > 2010:
     file_name="seu_arquivo.pdf",
     mime="application/pdf"
     )
+
 elif selected_model == 'Contour (V6-only)' and selected_year == 1998:
     st.write("Not Required")
 elif selected_model == 'Crown Victoria':
