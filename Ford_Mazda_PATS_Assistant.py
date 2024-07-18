@@ -16,10 +16,6 @@ st.set_page_config(
 
 makes = ['Ford', 'Lincoln', 'Mercury']
 
-pr_notrequired = 'Parameter reset: Not Required'
-
-pr_required = 'Parameter reset: Required'
-
 selected_make = st.selectbox('Select Make: ', makes)
 
 Ford = ['C-MAX', 'Contour (V6-only)', 'Crown Victoria', 'Edge']
@@ -49,7 +45,7 @@ file_contents = response.content
 
 if selected_model == 'C-MAX' and selected_year > 2010:
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
-    st.write(pr_required)
+    st.write('Parameter reset: Required')
     st.write('PATS Type = B/C')
     st.download_button(
     label="Baixar arquivo PDF",
