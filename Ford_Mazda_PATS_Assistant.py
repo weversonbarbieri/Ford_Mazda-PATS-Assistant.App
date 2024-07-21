@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import requests
 
 from PIL import Image
 
@@ -36,23 +35,19 @@ else:
 
 
 
-url = "https://github.com/weversonbarbieri/Ford-Mazda-Assistant-App/blob/main/FORD_PARAMETER_RESET_INS.pdf"
-
-# Download do arquivo
-response = requests.get(url)
-file_contents = response.content
-
-
 if selected_model == 'C-MAX' and selected_year > 2010:
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     st.write('Parameter reset: Required')
     st.write('PATS Type = B/C')
-    st.download_button(
-    label="Baixar arquivo PDF",
-    data=file_contents,
-    file_name="seu_arquivo.pdf",
-    mime="application/pdf"
-    )
+    with open('C:\Language_Projects\Language_Projects\Python\PATS_Assistant_Project\parameter_reset_instructions.pdf', 'rb') as pdf_file:
+       pdf_bytes = pdf_file.read()
+
+    st.download_button(label='Parameter Reset Instructions', 
+       data=pdf_bytes, 
+       file_name='Parameter Reset Instructions', 
+       mime='application/pdf'
+       )
+
 
 elif selected_model == 'Contour (V6-only)' and selected_year == 1998:
     st.write("Not Required")
