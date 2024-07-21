@@ -46,7 +46,7 @@ if selected_model == 'C-MAX' and selected_year > 2010:
     st.write(pr_required)
     st.write('PATS Type = B/C')
     st.download_button(
-        label="Baixar PDF",
+        label="Parameter Reset Instructions",
         data=pdf_data,
         file_name=file_name,
         mime="application/pdf"
