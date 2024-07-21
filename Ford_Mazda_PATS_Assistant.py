@@ -45,6 +45,12 @@ if selected_model == 'C-MAX' and selected_year > 2010:
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     st.write(pr_required)
     st.write('PATS Type = B/C')
+    st.download_button(
+        label="Baixar PDF",
+        data=pdf_data,
+        file_name=file_name,
+        mime="application/pdf"
+        )
     
        
 
