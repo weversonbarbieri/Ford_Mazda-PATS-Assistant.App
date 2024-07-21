@@ -10,6 +10,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+pr_required = 'Parameter reset: Required'
 
 makes = ['Ford', 'Lincoln', 'Mercury']
 
@@ -42,16 +43,10 @@ else:
 
 if selected_model == 'C-MAX' and selected_year > 2010:
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
-    st.write('Parameter reset: Required')
+    st.write(pr_required)
     st.write('PATS Type = B/C')
     
-    st.download_button(
-        label="Baixar PDF",
-        data=pdf_data,
-        file_name=file_name,
-        mime="application/pdf"
-        )
-    
+       
 
 elif selected_model == 'Contour (V6-only)' and selected_year == 1998:
     st.write("Not Required")
