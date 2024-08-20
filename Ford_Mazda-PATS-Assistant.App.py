@@ -2222,7 +2222,7 @@ if selected_model == 'CX-30':
     # Shows a select box with year from 1996 to 2023.
     if selected_year == 2020:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
-        pr_not_required_mazda_mh(pr_required, pdf_data_mazda_mh, file_name_mh)
+        pr_not_required_mazda_mh(pr_not_required, pdf_data_mazda_mh, file_name_mh)
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
         st.write(no_security_system)
@@ -2264,7 +2264,7 @@ if selected_model == 'Mazda3':
         pr_required_mazda_mg(pr_required, pdf_data_mazda_mg, file_name_mg)
     elif selected_year >= 2019 and selected_year <= 2020:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
-        pr_not_required_mazda_mh(pr_required, pdf_data_mazda_mh, file_name_mh)
+        pr_not_required_mazda_mh(pr_not_required, pdf_data_mazda_mh, file_name_mh)
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
         st.write(no_security_system)
@@ -2300,7 +2300,7 @@ if selected_model == 'Mazda6':
     # Shows a select box with year from 1996 to 2023.
     if selected_year >= 2003 and selected_year <= 2008:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
-        pr_not_required_mazda_mb(pr_required, pdf_data_mazda_mb, file_name_mb)
+        pr_not_required_mazda_mb(pr_not_required, pdf_data_mazda_mb, file_name_mb)
     elif selected_year >= 2009 and selected_year <= 2013:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
         pr_required_mazda_mc(pr_required, pdf_data_mazda_mc, file_name_mc)
@@ -2340,7 +2340,7 @@ if selected_model == 'MPV':
     # Shows a select box with year from 1996 to 2023.
     if selected_year >= 2000 and selected_year <= 2006:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
-        pr_not_required_mazda_ma(pr_required, pdf_data_mazda_ma, file_name_ma)
+        pr_not_required_mazda_ma(pr_not_required, pdf_data_mazda_ma, file_name_ma)
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
         st.write(no_security_system)
@@ -2355,7 +2355,7 @@ if selected_model == 'MX-5 (Miata)':
         st.write(no_security_system)
     elif selected_year >= 2001 and selected_year <= 2005:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
-        pr_not_required_mazda_ma(pr_required, pdf_data_mazda_ma, file_name_ma)
+        pr_not_required_mazda_ma(pr_not_required, pdf_data_mazda_ma, file_name_ma)
     elif selected_year >= 2016:
         pr_required_mazda_mg(pr_required, pdf_data_mazda_mg, file_name_mg)
     # If none of the above options variables are selected, shows that the PATS system is not available.
@@ -2423,7 +2423,7 @@ if selected_model == 'Tribute':
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     # Shows a select box with year from 1996 to 2023.
     if selected_year <= 2001 and selected_year <= 2007:
-        # This model year/model matches the security system the same as the Ford Ranger. 
+        # This model year/model matches the security system the same as Ford Ranger. 
         st.write("See Ford Escape.")
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
