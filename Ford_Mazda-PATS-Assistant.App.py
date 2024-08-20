@@ -109,7 +109,7 @@ Mercury = ['Cougar', 'Grand Marquis', 'Marauder', 'Mariner', 'Mariner (Hybrid)',
 Mazda = ['626', 'B-Series', 'CX-3', 'CX-5', 'CX-7', 'CX-7 (Advanced Keyless)', 'CX-9', 'CX-9 (Advanced Keyless)', 'CX-30', 'Mazda2', 'Mazda2 (Advanced Keyless)', 
          'Mazda3', 'Mazda3 (Advanced Keyless)', 'Mazda5', 'Mazda6', 'Mazda6 (Advanced Keyless)', 'Millenia', 'MPV', 'MX-5 (Miata)', 
          'MX-5 (Miata) (Advanced Keyless Entry/Start)', 'MX-5 (Miata) (Keyless Entry, Without Keyless Start)',
-         'Protege', 'RX-8 (Advanced Keyless)', 'Tribute']
+         'Protege', 'RX-8', 'RX-8 (Advanced Keyless)', 'Tribute']
 
 year = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
 
