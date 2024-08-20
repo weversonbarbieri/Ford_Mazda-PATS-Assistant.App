@@ -2398,7 +2398,7 @@ if selected_model == 'RX-8':
     # Shows the year/make/model selected.
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     # Shows a select box with year from 1996 to 2023.
-    if selected_year <= 2004 and selected_year <= 2011:
+    if selected_year >= 2004 and selected_year <= 2011:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
         pr_required_mazda_mc(pr_required, pdf_data_mazda_mc, file_name_mc)
     # If none of the above options variables are selected, shows that the PATS system is not available.
@@ -2410,13 +2410,13 @@ if selected_model == 'RX-8 (Advanced Keyless)':
     # Shows the year/make/model selected.
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     # Shows a select box with year from 1996 to 2023.
-    if selected_year <= 2006 and selected_year <= 2011:
+    if selected_year >= 2006 and selected_year <= 2011:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
         pr_required_mazda_md(pr_required, pdf_data_mazda_md, file_name_md)
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
         st.write(no_security_system)
-
+        
 # Shows a select box with Mazda's models.
 if selected_model == 'Tribute':
     # Shows the year/make/model selected.
