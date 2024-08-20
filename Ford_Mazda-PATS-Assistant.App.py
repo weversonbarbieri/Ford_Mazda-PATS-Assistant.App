@@ -2422,7 +2422,7 @@ if selected_model == 'Tribute':
     # Shows the year/make/model selected.
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     # Shows a select box with year from 1996 to 2023.
-    if selected_year <= 2001 and selected_year <= 2007:
+    if selected_year >= 2001 and selected_year <= 2007:
         # This model year/model matches the security system the same as Ford Ranger. 
         st.write("See Ford Escape.")
     # If none of the above options variables are selected, shows that the PATS system is not available.
