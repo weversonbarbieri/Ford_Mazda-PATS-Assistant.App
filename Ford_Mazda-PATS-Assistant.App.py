@@ -2379,7 +2379,7 @@ if selected_model == 'MX-5 (Miata) (Keyless Entry, Without Keyless Start)':
     # Shows the year/make/model selected.
     st.write('Vehicle Selected:', selected_year, selected_make, selected_model)
     # Shows a select box with year from 1996 to 2023.
-    if selected_year <= 2006 and selected_year <= 2015:
+    if selected_year >= 2006 and selected_year <= 2015:
         # Shows whether or not the parameter reset is required and the button to download the procedure required.
         pr_required_mazda_mc(pr_required, pdf_data_mazda_mc, file_name_mc)
     # If none of the above options variables are selected, shows that the PATS system is not available.
