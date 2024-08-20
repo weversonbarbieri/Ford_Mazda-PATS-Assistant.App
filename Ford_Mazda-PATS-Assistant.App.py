@@ -515,11 +515,11 @@ def pr_not_required_mazda_mb(pr_not_required, pdf_data_mazda_mb, file_name_mb):
     # Shows whether or not the parameter reset is required
     st.write(pr_not_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-B):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-B Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_mb,
     # Gets the file name from the respective variable created above. 
@@ -532,11 +532,11 @@ def pr_required_mazda_mc(pr_required, pdf_data_mazda_mc, file_name_mc):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-C):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-C Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_mc,
     # Gets the file name from the respective variable created above. 
@@ -549,11 +549,11 @@ def pr_required_mazda_md(pr_required, pdf_data_mazda_md, file_name_md):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-D):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-D Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_md,
     # Gets the file name from the respective variable created above. 
@@ -566,11 +566,11 @@ def pr_required_mazda_me(pr_required, pdf_data_mazda_me, file_name_me):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-E):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-E Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_me,
     # Gets the file name from the respective variable created above. 
@@ -583,11 +583,11 @@ def pr_required_mazda_mf(pr_required, pdf_data_mazda_mf, file_name_mf):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-F):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-F Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_mf,
     # Gets the file name from the respective variable created above. 
@@ -600,11 +600,11 @@ def pr_required_mazda_mg(pr_required, pdf_data_mazda_mg, file_name_mg):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-G):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-G Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_mg,
     # Gets the file name from the respective variable created above. 
@@ -617,11 +617,11 @@ def pr_not_required_mazda_mh(pr_required, pdf_data_mazda_mh, file_name_mh):
     # Shows whether or not the parameter reset is required
     st.write(pr_required)
     # Shows a message to click on the button to download PDF file.
-    st.write("Click on the button to download the Immobilizer Programming Procedure (M-A):")
+    st.write("Click on the button to download the Immobilizer Programming Procedure (M-H):")
     # Shows the button where the PDF file can be downloaded:
     st.download_button(
     # Labels the button,
-    label="Mazda M-A Instructions",
+    label="Mazda M-H Instructions",
     # contains the PDF file content/data.
     data=pdf_data_mazda_mh,
     # Gets the file name from the respective variable created above. 
@@ -629,7 +629,6 @@ def pr_not_required_mazda_mh(pr_required, pdf_data_mazda_mh, file_name_mh):
     # PDF file data type.
     mime="application/pdf"
     )
-
 #---------------------------------------------------------------------------------------------#
 #                                    SIDE BAR + SELECT BOXES                                  #
 #---------------------------------------------------------------------------------------------#
