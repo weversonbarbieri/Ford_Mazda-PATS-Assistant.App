@@ -3,33 +3,13 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-
 st.set_page_config(
     page_title="Ford & Mazda PATS Assistant",
     page_icon=":car:",
+    
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
-
-#---------------------------------------------------------------------------------------------#
-#                                    APPLICATION LOGO                                         #
-#---------------------------------------------------------------------------------------------#
-
-# The variable url_logo contains the link from GitHub.
-url_logo = "https://raw.githubusercontent.com/weversonbarbieri/Ford-Mazda-Assistant-App/main/project_logo.JPG"
-
-# The response vairable gets link info and confirms whether it is readable (200) or not (404).
-response = requests.get(url_logo)
-
-# Opens the image using PIL and response.content where the image content was got after reading the URL. 
-image_ford = Image.open(BytesIO(response.content))
-
-# This shows the image once the application is opened and width sets the size of the image.
-st.image(image_ford, width=500) 
-st.write("<div align='center'><h2><i>Ford PATS Assistant</i></h2></div>", unsafe_allow_html=True)
-st.write("")
-
 
 #---------------------------------------------------------------------------------------------#
 #                                    VARIABLES                                                #
@@ -629,29 +609,71 @@ def pr_not_required_mazda_mh(pr_required, pdf_data_mazda_mh, file_name_mh):
     # PDF file data type.
     mime="application/pdf"
     )
+
 #---------------------------------------------------------------------------------------------#
-#                                    SIDE BAR + SELECT BOXES                                  #
+#                                  SIDE BAR + SELECT BOXES AND LOGO                           #
 #---------------------------------------------------------------------------------------------#
+
+
+# These raw urls contain the the make logos and they will be used to show depending on the make selected.   
+url_fordlogo = "https://raw.githubusercontent.com/weversonbarbieri/Ford_Mazda-PATS-Assistant.App/main/ford_logo.jpg"
+url_lincolnlogo = "https://raw.githubusercontent.com/weversonbarbieri/Ford_Mazda-PATS-Assistant.App/main/lincoln_logo.jpeg"
+url_mercurylogo = "https://raw.githubusercontent.com/weversonbarbieri/Ford_Mazda-PATS-Assistant.App/main/mercury_logo.jpeg"
+url_mazdalogo = "https://raw.githubusercontent.com/weversonbarbieri/Ford_Mazda-PATS-Assistant.App/main/mazdalogo.png"
+
+
+# The response vairables get the links info and confirms whether it is readable (200) or not (404).
+response_fordlogo = requests.get(url_fordlogo)
+response_lincolnlogo = requests.get(url_lincolnlogo)
+response_mercurylogo = requests.get(url_mercurylogo)
+response_mazdalogo = requests.get(url_mazdalogo)
+
+# Opens the image using PIL and response..._logo.content where the image content was got after reading the URL. 
+image_fordlogo = Image.open(BytesIO(response_fordlogo.content))
+image_lincolnlogo = Image.open(BytesIO(response_lincolnlogo.content))
+image_mercurylogo = Image.open(BytesIO(response_mercurylogo.content))
+image_mazdalogo = Image.open(BytesIO(response_mazdalogo.content))
+
 
 # Shows a side bar containing the Makes.
 selected_make = st.sidebar.selectbox("Make:",(makes))
 
 if selected_make == 'Ford':
+    # Shows the header based on the make selected using HTML.
+    st.write("<div align='center'><h2><i>Ford Anti-theft System</i></h2></div>", unsafe_allow_html=True)
+    st.write("")
+    # Shows the Ford logo when the make Ford is selected.
+    st.image(image_fordlogo, width=100)
     # If make Ford is selected, shows a side bar containing the Ford models.
-    selected_model = st.sidebar.selectbox("Model:",(Ford))
+    selected_model = st.sidebar.selectbox('Model:',(Ford))
     # Side bar to select the vehicle's year. 
     selected_year = st.sidebar.selectbox("Year:",(year))
 elif selected_make == 'Lincoln':
+    # Shows the header based on the make selected using HTML.
+    st.write("<div align='center'><h2><i>Lincoln Anti-theft System</i></h2></div>", unsafe_allow_html=True)
+    st.write("")
+    # Shows the Ford logo when the make Lincoln is selected.
+    st.image(image_lincolnlogo, width=100)
     # If make Lincoln is selected, shows a side bar containing the Lincoln models.
     selected_model = st.sidebar.selectbox("Model:",(Lincoln))
     # Side bar to select the vehicle's year. 
     selected_year = st.sidebar.selectbox("Year:",(year))
 elif selected_make == 'Mazda':
+    # Shows the header based on the make selected using HTML.
+    st.write("<div align='center'><h2><i>Mazda Anti-theft System</i></h2></div>", unsafe_allow_html=True)
+    st.write("")
+    # Shows the Mazda logo when the make Lincoln is selected.
+    st.image(image_mazdalogo, width=100)
     # If make Mazda is selected, shows a side bar containing the Mazda models.
     selected_model = st.sidebar.selectbox("Model:",(Mazda))
     # Side bar to select the vehicle's year. 
     selected_year = st.sidebar.selectbox("Year:",(year))
 else:
+    # Shows the header based on the make selected using HTML.
+    st.write("<div align='center'><h2><i>Mercury Anti-theft System</i></h2></div>", unsafe_allow_html=True)
+    st.write("")
+    # Shows the Mercury logo when the make Lincoln is selected.
+    st.image(image_mercurylogo, width=100)
     # In case none of the above options were selected, shows a side bar containing the Mercury models.
     selected_model = st.sidebar.selectbox("Model:",(Mercury))
     # Side bar to select the vehicle's year. 
@@ -2416,7 +2438,7 @@ if selected_model == 'RX-8 (Advanced Keyless)':
     # If none of the above options variables are selected, shows that the PATS system is not available.
     else:
         st.write(no_security_system)
-        
+
 # Shows a select box with Mazda's models.
 if selected_model == 'Tribute':
     # Shows the year/make/model selected.
