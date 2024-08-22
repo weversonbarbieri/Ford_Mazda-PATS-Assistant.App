@@ -16,6 +16,7 @@ This project is an application created using the Streamlit frontend library. Its
          
 
 **How to Run the Project:**
+  
   The application was developed using the Streamlit frontend library. Therefore, it works in any browser with an internet connection via the following URL: 
   https://ford-mazda-pats-assistant.streamlit.app/
 
