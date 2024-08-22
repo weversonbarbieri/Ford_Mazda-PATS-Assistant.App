@@ -8,10 +8,10 @@ This project is an application created using the Streamlit frontend library. Its
          year.
   2. **Output:**
      
-     **Mazda:** when selecting the Mazda manufacturer, model, and year, it shows the selected vehicle. The necessary key learning procedure is provided, along with a button to 
+     * **Mazda:** when selecting the Mazda manufacturer, model, and year, it shows the selected vehicle. The necessary key learning procedure is provided, along with a button to 
      download a file containing the required steps for key programming.
 
-     **Ford:** for Ford, Lincoln, and Mercury manufacturers, the selected vehicle is displayed, and users are guided through the necessary key learning process. Depending on the 
+     * **Ford:** for Ford, Lincoln, and Mercury manufacturers, the selected vehicle is displayed, and users are guided through the necessary key learning process. Depending on the 
      year/model selected, it shows the key quantity required, starter motor and anti-theft system light status.
          
 
