@@ -40,7 +40,7 @@ theft_light_no = "No"
 theft_light_na = 'N/A'
 
 # Variable used on the functions to show the PATS status on the vehicle. 
-yearmodel_notavailable = "The year/make/model selected is not available."
+pats_not_available = "The year/make/model selected is not available."
 # Variable used on the functions to show the parameter reset is required.
 pr_required = 'Parameter reset: Required'
 # Variable used on the functions to show the parameter reset IS NOT required.
