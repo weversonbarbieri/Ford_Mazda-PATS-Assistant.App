@@ -85,7 +85,7 @@ Ford = ['C-MAX (Hybrid)', 'C-MAX (Hybrid) (Push to Start)', 'Contour (V6-only)',
         'Explorer Sport (2dr)', 'Explorer Sport Trac', 'F-150', 'F-150 Harley-Davidson', 'F-150 Heritage', 'F-250 (under 8500# GVW)', 'F-250 Super Duty', 'F-350 Super Duty', 'F-450 Super Duty', 'F-650 Super Duty', 'F-750 Super Duty',
         'F-Series > 8500 (Stripped Chassis/Cab Chassis)', 'Fiesta', 'Fiesta (Push to Start)', 'Five Hundred', 'Flex', 'Flex (Push to Start)', 'Focus', 'Focus (Push to Start) / Focus EV (Push to Start)', 'Freestar', 
         'Freestyle', 'Fusion / Fusion (hybrid)', 'Fusion (Push to Start)', 'Fusion (Hybrid) (Push to Start)', 'Fusion EV (Push to Start)', 'GT', 'Mustang', 'Ranger (3.0L & 4.0L ONLY)', 'Ranger (2.3L, 3.0L, & 4.0L)', 'Taurus (Duratec & SHO only)', 'Taurus', 'Taurus (Push to Start / X)', 
-        'Thunderbird', 'Transit', 'Transit (Connect)', 'Windstar']
+        'Thunderbird', 'Transit', 'Transit Connect', 'Windstar']
 
 # This variable stores all Lincoln models to show in the select box.
 Lincoln = ['Aviator', 'Blackwood', 'Continental', 'LS', 'Mark LT', 'Mark VIII', 'MKS / MKS (Push to Start)', 'MKT', 'MKX', 
